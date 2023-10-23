@@ -1,0 +1,15 @@
+C:\dev\Udemy\Eshopping\Catalog\Catalog.Application\bin\Debug\net7.0\Catalog.Application.deps.json
+C:\dev\Udemy\Eshopping\Catalog\Catalog.Application\bin\Debug\net7.0\Catalog.Application.dll
+C:\dev\Udemy\Eshopping\Catalog\Catalog.Application\bin\Debug\net7.0\Catalog.Application.pdb
+C:\dev\Udemy\Eshopping\Catalog\Catalog.Application\obj\Debug\net7.0\Catalog.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\Udemy\Eshopping\Catalog\Catalog.Application\obj\Debug\net7.0\Catalog.Application.AssemblyInfoInputs.cache
+C:\dev\Udemy\Eshopping\Catalog\Catalog.Application\obj\Debug\net7.0\Catalog.Application.AssemblyInfo.cs
+C:\dev\Udemy\Eshopping\Catalog\Catalog.Application\obj\Debug\net7.0\Catalog.Application.csproj.CoreCompileInputs.cache
+C:\dev\Udemy\Eshopping\Catalog\Catalog.Application\obj\Debug\net7.0\Catalog.Application.dll
+C:\dev\Udemy\Eshopping\Catalog\Catalog.Application\obj\Debug\net7.0\refint\Catalog.Application.dll
+C:\dev\Udemy\Eshopping\Catalog\Catalog.Application\obj\Debug\net7.0\Catalog.Application.pdb
+C:\dev\Udemy\Eshopping\Catalog\Catalog.Application\obj\Debug\net7.0\ref\Catalog.Application.dll
+C:\dev\Udemy\Eshopping\Catalog\Catalog.Application\bin\Debug\net7.0\Catalog.Core.dll
+C:\dev\Udemy\Eshopping\Catalog\Catalog.Application\bin\Debug\net7.0\Catalog.Core.pdb
+C:\dev\Udemy\Eshopping\Catalog\Catalog.Application\obj\Debug\net7.0\Catalog.Application.csproj.AssemblyReference.cache
+C:\dev\Udemy\Eshopping\Catalog\Catalog.Application\obj\Debug\net7.0\Catalog.Application.csproj.CopyComplete
