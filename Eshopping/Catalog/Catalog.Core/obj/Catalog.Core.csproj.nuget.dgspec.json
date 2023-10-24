@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\dev\\Udemy\\clean_microservices\\Eshopping\\Catalog\\Catalog.Core\\Catalog.Core.csproj": {}
+    "C:\\Users\\anulud.MID_OCEAN\\source\\repos\\clean_microservices\\Eshopping\\Catalog\\Catalog.Core\\Catalog.Core.csproj": {}
   },
   "projects": {
-    "C:\\dev\\Udemy\\clean_microservices\\Eshopping\\Catalog\\Catalog.Core\\Catalog.Core.csproj": {
+    "C:\\Users\\anulud.MID_OCEAN\\source\\repos\\clean_microservices\\Eshopping\\Catalog\\Catalog.Core\\Catalog.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\dev\\Udemy\\clean_microservices\\Eshopping\\Catalog\\Catalog.Core\\Catalog.Core.csproj",
+        "projectUniqueName": "C:\\Users\\anulud.MID_OCEAN\\source\\repos\\clean_microservices\\Eshopping\\Catalog\\Catalog.Core\\Catalog.Core.csproj",
         "projectName": "Catalog.Core",
-        "projectPath": "C:\\dev\\Udemy\\clean_microservices\\Eshopping\\Catalog\\Catalog.Core\\Catalog.Core.csproj",
-        "packagesPath": "C:\\Users\\Yell\\.nuget\\packages\\",
-        "outputPath": "C:\\dev\\Udemy\\clean_microservices\\Eshopping\\Catalog\\Catalog.Core\\obj\\",
+        "projectPath": "C:\\Users\\anulud.MID_OCEAN\\source\\repos\\clean_microservices\\Eshopping\\Catalog\\Catalog.Core\\Catalog.Core.csproj",
+        "packagesPath": "C:\\Users\\anulud.MID_OCEAN\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\anulud.MID_OCEAN\\source\\repos\\clean_microservices\\Eshopping\\Catalog\\Catalog.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Yell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\anulud.MID_OCEAN\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +22,9 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.devexpress.com/fli2iEvX4vZglcPUs8mqaLbrcFcOFyoCTLGXDD772WHpQFuSjx/api": {},
+          "https://nuget.pkg.github.com/doehle/index.json": {}
         },
         "frameworks": {
           "net7.0": {
@@ -65,7 +67,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
