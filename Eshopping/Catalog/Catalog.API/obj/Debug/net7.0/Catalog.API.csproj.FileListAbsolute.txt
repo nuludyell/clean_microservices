@@ -99,3 +99,15 @@ C:\Users\anulud.MID_OCEAN\source\repos\clean_microservices\Eshopping\Catalog\Cat
 C:\Users\anulud.MID_OCEAN\source\repos\clean_microservices\Eshopping\Catalog\Catalog.API\bin\Debug\net7.0\AutoMapper.dll
 C:\Users\anulud.MID_OCEAN\source\repos\clean_microservices\Eshopping\Catalog\Catalog.API\bin\Debug\net7.0\MediatR.dll
 C:\Users\anulud.MID_OCEAN\source\repos\clean_microservices\Eshopping\Catalog\Catalog.API\bin\Debug\net7.0\MediatR.Contracts.dll
+C:\Users\anulud.MID_OCEAN\source\repos\clean_microservices\Eshopping\Catalog\Catalog.API\bin\Debug\net7.0\Asp.Versioning.Abstractions.dll
+C:\Users\anulud.MID_OCEAN\source\repos\clean_microservices\Eshopping\Catalog\Catalog.API\bin\Debug\net7.0\Asp.Versioning.Http.dll
+C:\Users\anulud.MID_OCEAN\source\repos\clean_microservices\Eshopping\Catalog\Catalog.API\bin\Debug\net7.0\Asp.Versioning.Mvc.dll
+C:\Users\anulud.MID_OCEAN\source\repos\clean_microservices\Eshopping\Catalog\Catalog.API\bin\Debug\net7.0\Asp.Versioning.Mvc.ApiExplorer.dll
+C:\Users\anulud.MID_OCEAN\source\repos\clean_microservices\Eshopping\Catalog\Catalog.API\bin\Debug\net7.0\HealthChecks.UI.Client.dll
+C:\Users\anulud.MID_OCEAN\source\repos\clean_microservices\Eshopping\Catalog\Catalog.API\bin\Debug\net7.0\HealthChecks.UI.Core.dll
+C:\Users\anulud.MID_OCEAN\source\repos\clean_microservices\Eshopping\Catalog\Catalog.API\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\anulud.MID_OCEAN\source\repos\clean_microservices\Eshopping\Catalog\Catalog.API\bin\Debug\net7.0\Microsoft.OpenApi.dll
+C:\Users\anulud.MID_OCEAN\source\repos\clean_microservices\Eshopping\Catalog\Catalog.API\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\anulud.MID_OCEAN\source\repos\clean_microservices\Eshopping\Catalog\Catalog.API\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\anulud.MID_OCEAN\source\repos\clean_microservices\Eshopping\Catalog\Catalog.API\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\anulud.MID_OCEAN\source\repos\clean_microservices\Eshopping\Catalog\Catalog.API\obj\Debug\net7.0\Catalog.API.MvcApplicationPartsAssemblyInfo.cs
