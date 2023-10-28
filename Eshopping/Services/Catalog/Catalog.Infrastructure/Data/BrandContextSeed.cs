@@ -10,6 +10,7 @@ public static class BrandContextSeed
     {
         bool checkBrands = brandCollection.Find(b => true).Any();
         string path = Path.Combine("Data", "SeedData", "brands.json");
+        //string path = "../Catalog.Infrastructure/Data/SeedData/brands.json";
 
         if (!checkBrands)
         {

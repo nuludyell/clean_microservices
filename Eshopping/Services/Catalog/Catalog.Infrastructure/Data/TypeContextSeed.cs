@@ -10,6 +10,7 @@ public static class TypeContextSeed
     {
         bool checkTypes = typeCollection.Find(b => true).Any();
         string path = Path.Combine("Data", "SeedData", "types.json");
+        //string path = "../Catalog.Infrastructure/Data/SeedData/types.json";
 
         if (!checkTypes)
         {
