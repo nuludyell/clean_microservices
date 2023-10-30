@@ -2,4 +2,4 @@
 
 namespace Basket.Application.Commands;
 
-public record DeleteBasketByUsernameCommand(string Username) : IRequest<Unit>;
+public sealed record DeleteBasketByUsernameCommand(string Username) : IRequest<Unit>;

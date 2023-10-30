@@ -1,6 +1,8 @@
-﻿using Basket.Application.Handlers.CommandHandlers;
+﻿using Basket.Application.GrpcService;
+using Basket.Application.Handlers.CommandHandlers;
 using Basket.Core.Repositories;
 using Basket.Infrastructure.Repositories;
+using Discount.Grpc.Protos;
 using HealthChecks.UI.Client;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
@@ -42,6 +44,8 @@ public class Startup
         services.AddAutoMapper(typeof(Startup));
         services.AddMediatR(configuration => configuration.RegisterServicesFromAssembly(typeof(CreateShoppingCartHandler).Assembly));
         services.AddScoped<IBasketRepository, BasketRepository>();
+        services.AddScoped<DiscountGrpcService>();
+        services.AddGrpcClient<DiscountProtoService.DiscountProtoServiceClient>(o => o.Address = new Uri(Configuration["GrpcSettings:DiscountUrl"]));
 
         services.AddHealthChecks()
             .AddRedis(

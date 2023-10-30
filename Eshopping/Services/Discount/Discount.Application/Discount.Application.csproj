@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Basket.Core\Basket.Core.csproj" />
+    <ProjectReference Include="..\Discount.Core\Discount.Core.csproj" />
   </ItemGroup>
 
   <ItemGroup>
@@ -16,9 +16,7 @@
   </ItemGroup>
 	
   <ItemGroup>
-	  <Protobuf Include="..\..\Discount\Discount.Application\Protos\discount.proto" GrpcServices="Client">
-		  <Link>Protos\discount.proto</Link>
-	  </Protobuf>
+	  <Protobuf Include="Protos/discount.proto" GrpcServices="Server" />
   </ItemGroup>
 
 </Project>
