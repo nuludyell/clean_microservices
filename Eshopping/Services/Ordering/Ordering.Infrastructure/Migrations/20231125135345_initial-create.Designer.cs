@@ -54,7 +54,7 @@ namespace Ordering.Infrastructure.Migrations
                     b.Property<string>("Cvv")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("EmaillAddess")
+                    b.Property<string>("EmailAddress")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Expiration")

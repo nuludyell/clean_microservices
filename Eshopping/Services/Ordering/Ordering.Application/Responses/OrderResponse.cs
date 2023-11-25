@@ -7,7 +7,7 @@ public class OrderResponse
     public double TotalPrice { get; set; }
     public string FirstName { get; set; }
     public string LastName { get; set; }
-    public string EmaillAddess { get; set; }
+    public string EmailAddress { get; set; }
     public string AddressLine { get; set; }
     public string Country { get; set; }
     public string State { get; set; }

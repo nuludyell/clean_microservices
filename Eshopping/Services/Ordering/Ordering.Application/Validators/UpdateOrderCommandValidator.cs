@@ -20,7 +20,7 @@ public class UpdateOrderCommandValidator : AbstractValidator<UpdateOrderCommand>
             .GreaterThan(-1)
             .WithMessage("{Total Price} should not be negative.");
 
-        RuleFor(o => o.EmailAddess)
+        RuleFor(o => o.EmailAddress)
             .NotEmpty()
             .WithMessage("{EmailAddress} is required.");
 
