@@ -7,7 +7,7 @@ public sealed record CheckoutOrderCommand(
     double TotalPrice,
     string FirstName,
     string LastName,
-    string EmailAddess,
+    string EmailAddress,
     string AddressLine,
     string Country,
     string State,

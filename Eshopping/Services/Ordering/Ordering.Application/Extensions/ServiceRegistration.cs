@@ -8,7 +8,7 @@ namespace Ordering.Application.Extensions;
 
 public static class ServiceRegistration
 {
-    public static IServiceCollection AddApplicationServices(IServiceCollection services)
+    public static IServiceCollection AddApplicationServices(this IServiceCollection services)
     {
         services.AddAutoMapper(Assembly.GetExecutingAssembly());
         services.AddMediatR(configuration => configuration.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));

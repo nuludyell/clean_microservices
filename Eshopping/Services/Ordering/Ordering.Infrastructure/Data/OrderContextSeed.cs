@@ -13,7 +13,7 @@ public class OrderContextSeed
         {
             orderContext.Orders.AddRange(GetOrders());
             await orderContext.SaveChangesAsync();
-            logger.LogInformation($"Ordering database seeded: {typeof(OrderContext).Name}");
+            logger.LogInformation($"Ordering database seeded: {typeof(OrderContext).Name} seeded.");
         }
     }
 
@@ -26,7 +26,7 @@ public class OrderContextSeed
                 Username = "ariel",
                 FirstName = "Ariel",
                 LastName = "Nulud",
-                EmaillAddess = "yellnulud@gmail.com",
+                EmailAddress = "yellnulud@gmail.com",
                 AddressLine = "Rizal",
                 Country = "Philippines",
                 TotalPrice = 750,
