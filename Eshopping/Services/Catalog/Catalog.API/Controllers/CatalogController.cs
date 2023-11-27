@@ -58,9 +58,9 @@ public class CatalogController : ApiController
     }
 
     [HttpGet]
-    [Route("[action]/{brand}", Name = nameof(GetProductByBrandName))]
+    [Route("[action]/{brand}", Name = nameof(GetProductsByBrandName))]
     [ProducesResponseType(typeof(IList<ProductResponse>), (int)HttpStatusCode.OK)]
-    public async Task<ActionResult<IList<ProductResponse>>> GetProductByBrandName(string brand)
+    public async Task<ActionResult<IList<ProductResponse>>> GetProductsByBrandName(string brand)
     {
         return Ok(await _mediator.Send(new GetProductsByBrandQuery(brand)));
     }

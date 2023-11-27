@@ -15,5 +15,5 @@ public class ShoppingCartResponse
         Username = username;
     }
 
-    public decimal TotalPrice => Items.Sum(i => i.Price * i.Quantity);
+    public double TotalPrice => Items.Sum(i => i.Price * i.Quantity);
 }
