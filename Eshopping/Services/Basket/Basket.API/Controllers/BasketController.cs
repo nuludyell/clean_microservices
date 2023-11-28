@@ -50,7 +50,8 @@ public class BasketController : ApiController
         return Ok(await _mediator.Send(createShoppingCartCommand));
     }
 
-    [HttpDelete(nameof(DeleteBasketByUsername))]
+    [HttpDelete]
+    [Route("[action]/{username}", Name = nameof(DeleteBasketByUsername))]
     [ProducesResponseType((int)HttpStatusCode.OK)]
     public async Task<IActionResult> DeleteBasketByUsername(string username)
     {
