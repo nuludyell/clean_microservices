@@ -25,8 +25,7 @@ public class BasketOrderingConsumer : IConsumer<BasketCheckoutEvent>
 
     public async Task Consume(ConsumeContext<BasketCheckoutEvent> context)
     {
-        var command = _mapper.Map<CheckoutOrderCommand>(context.Message);
-        var result = await _mediator.Send(command);
+        await _mediator.Send(_mapper.Map<CheckoutOrderCommand>(context.Message));
         _logger.LogInformation($"Basket checkout event completed.");
     }
 }
