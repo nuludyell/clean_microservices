@@ -3,16 +3,16 @@
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
-    <UserSecretsId>3bda4316-d056-4a5d-a037-ccbb4ae003e9</UserSecretsId>
+    <UserSecretsId>e9167725-5179-46bf-b3dc-ec5d58089cca</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <DockerfileContext>..\..</DockerfileContext>
   </PropertyGroup>
 
   <ItemGroup>
 	<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.14" />
-    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.4" />
-    <PackageReference Include="Ocelot" Version="21.0.0" />
-    <PackageReference Include="Ocelot.Cache.CacheManager" Version="21.0.0" />
+	<PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.4" />
+	<PackageReference Include="Ocelot" Version="21.0.0" />
+	<PackageReference Include="Ocelot.Cache.CacheManager" Version="21.0.0" />
   </ItemGroup>
 
 </Project>

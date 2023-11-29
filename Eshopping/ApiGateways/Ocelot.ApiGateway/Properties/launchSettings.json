@@ -1,4 +1,5 @@
-{
+﻿{
+  "$schema": "https://json.schemastore.org/launchsettings.json",
   "iisSettings": {
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
@@ -8,21 +9,21 @@
     }
   },
   "profiles": {
+    "OcelotApiGateway": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": false,
+      "applicationUrl": "https://localhost:9010",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Local"
+      }
+    },
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": false,
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
-    },
-    "OcelotApiGateway": {
-      "commandName": "Project",
-      "launchBrowser": false,
-      "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Local"
-      },
-      "dotnetRunMessages": true,
-      "applicationUrl": "http://localhost:9010"
     },
     "Docker": {
       "commandName": "Docker",
