@@ -124,3 +124,10 @@ services:
       - ordering.api
     ports:
       - 9010:80
+
+  identityserver:
+    container_name: identityserver
+    environment:
+      - ASPNETCORE_URLS=http://*:9009
+    ports:
+      - 9009:9009

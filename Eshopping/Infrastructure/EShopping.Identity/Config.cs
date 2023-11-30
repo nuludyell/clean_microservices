@@ -1,9 +1,4 @@
-﻿// Copyright (c) Brock Allen & Dominick Baier. All rights reserved.
-// Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
-
-
-using IdentityServer4.Models;
-using System.Collections.Generic;
+﻿using Duende.IdentityServer.Models;
 
 namespace EShopping.Identity
 {
@@ -12,8 +7,8 @@ namespace EShopping.Identity
         public static IEnumerable<IdentityResource> IdentityResources =>
             new IdentityResource[]
             {
-                new IdentityResources.OpenId(),
-                new IdentityResources.Profile(),
+            new IdentityResources.OpenId(),
+            new IdentityResources.Profile(),
             };
 
         public static IEnumerable<ApiScope> ApiScopes =>
@@ -44,7 +39,11 @@ namespace EShopping.Identity
                  },
                  new ApiResource("EShoppingGateway", "EShopping Gateway")
                  {
-                     Scopes = { "eshoppinggateway", "basketapi" }
+                     Scopes =
+                     {
+                         "eshoppinggateway",
+                         "basketapi"
+                     }
                  }
             };
 

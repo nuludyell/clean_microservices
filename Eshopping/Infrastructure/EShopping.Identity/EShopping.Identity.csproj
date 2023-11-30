@@ -1,14 +1,22 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
-  <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<UserSecretsId>6e190f82-c4f6-4191-96bc-a5c7b73455fc</UserSecretsId>
+		<DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+		<DockerfileContext>..\..</DockerfileContext>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="IdentityServer4" Version="4.0.0" />
-    
-    <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="3.1.5" />
-    <PackageReference Include="Serilog.AspNetCore" Version="3.2.0" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Duende.IdentityServer" Version="6.3.2" />
+
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="6.0.0" />
+
+		<PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.4" />
+		<PackageReference Include="Serilog.AspNetCore" Version="6.0.0" />
+	</ItemGroup>
+
+
 
 </Project>
