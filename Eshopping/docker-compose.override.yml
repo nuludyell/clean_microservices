@@ -11,7 +11,7 @@ services:
       - discount.api
       - ordering.api
     ports:
-      - 44344:443
+      - 44344:44344
      
   catalogdb:
     container_name: catalogdb
@@ -80,7 +80,7 @@ services:
     container_name: catalog.api
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - ASPNETCORE_URLS=http://*9000
+      - ASPNETCORE_URLS=http://*:9000
       - DatabaseSettings__ConnectionString=mongodb://catalogdb:27017
       - DatabaseSettings__DatabaseName=CatalogDb
       - DatabaseSettings__CollectionName=Products
@@ -95,7 +95,7 @@ services:
     container_name: basket.api
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - ASPNETCORE_URLS=http://*9001
+      - ASPNETCORE_URLS=http://*:9001
       - CacheSettings__ConnectionString=basketdb:6379
       - GrpcSettings__DiscountUrl=http://discount.api
       - EventBusSettings__HostAddress=amqp://guest:guest@rabbitmq:5672
@@ -109,7 +109,7 @@ services:
     container_name: discount.api
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - ASPNETCORE_URLS=http://*9002
+      - ASPNETCORE_URLS=http://*:9002
       - DatabaseSettings__ConnectionString=Host=discountdb;Port=5432;Database=DiscountDb;User Id=admin;Password=Password@1;
     depends_on:
       - discountdb
@@ -120,7 +120,7 @@ services:
     container_name: ordering.api
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - ASPNETCORE_URLS=http://*9003
+      - ASPNETCORE_URLS=http://*:9003
       - ConnectionStrings__OrderingConnectionString=Server=orderdb;Database=OrderDb;User Id=sa;Password=Ariel1234567;TrustServerCertificate=True
       - EventBusSettings__HostAddress=amqp://guest:guest@rabbitmq:5672
     depends_on:
