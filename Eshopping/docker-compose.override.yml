@@ -11,7 +11,7 @@ services:
       - discount.api
       - ordering.api
     ports:
-      - 9200:9100
+      - 44344:443
      
   catalogdb:
     container_name: catalogdb
@@ -141,6 +141,7 @@ services:
   identityserver:
     container_name: identityserver
     environment:
+      - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://*:9011
     ports:
       - 9009:9009
