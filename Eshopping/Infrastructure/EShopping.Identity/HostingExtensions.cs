@@ -1,7 +1,9 @@
 using Duende.IdentityServer;
 using EShopping.Identity;
+using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Serilog;
+using System.Runtime.CompilerServices;
 
 namespace EShopping.Identity
 {
@@ -60,6 +62,14 @@ namespace EShopping.Identity
 
         public static WebApplication ConfigurePipeline(this WebApplication app)
         {
+            var forwardedHeaderOptions = new ForwardedHeadersOptions
+            {
+                ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
+            };
+            forwardedHeaderOptions.KnownNetworks.Clear();
+            forwardedHeaderOptions.KnownProxies.Clear();
+            app.UseForwardedHeaders(forwardedHeaderOptions);
+
             app.UseSerilogRequestLogging();
 
             if (app.Environment.IsDevelopment())
