@@ -71,18 +71,19 @@ public class Startup
             .RequireAuthenticatedUser()
             .Build();
 
-        services.AddControllers(config => config.Filters.Add(new AuthorizeFilter(userPolicy)));
+        services.AddControllers();
+        //services.AddControllers(config => config.Filters.Add(new AuthorizeFilter(userPolicy)));
 
-        services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-            .AddJwtBearer(options =>
-            {
-                options.Authority = "https://id-local.eshopping.com:44344";
-                options.Audience = "Catalog";
-            });
-        services.AddAuthorization(options =>
-        {
-            options.AddPolicy("CanRead", policy => policy.RequireClaim("scope", "catalogapi.read"));
-        });
+        //services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+        //    .AddJwtBearer(options =>
+        //    {
+        //        options.Authority = "https://id-local.eshopping.com:44344";
+        //        options.Audience = "Catalog";
+        //    });
+        //services.AddAuthorization(options =>
+        //{
+        //    options.AddPolicy("CanRead", policy => policy.RequireClaim("scope", "catalogapi.read"));
+        //});
     }
 
     public void Configure(
@@ -90,7 +91,7 @@ public class Startup
         IWebHostEnvironment env,
         IApiVersionDescriptionProvider apiVersionDescriptionProvider)
     {
-        var ngindxPath = "/basket";
+        var ngindxPath = "/catalog";
 
         if (env.IsEnvironment("Local"))
         {
@@ -127,9 +128,9 @@ public class Startup
         app.UseHttpsRedirection();
         app.UseRouting();
         app.UseCors("CorsPolicy");
-        app.UseAuthentication();
+        //app.UseAuthentication();
         app.UseStaticFiles();
-        app.UseAuthorization();
+        //app.UseAuthorization();
         app.UseEndpoints(endpoints =>
         {
             endpoints.MapControllers();

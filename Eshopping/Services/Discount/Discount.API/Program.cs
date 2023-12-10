@@ -1,4 +1,6 @@
+using Common.Logging;
 using Discount.Infrastructure.Extensions;
+using Serilog;
 
 namespace Discount.API;
 
@@ -16,5 +18,5 @@ public class Program
         .ConfigureWebHostDefaults(webBuilder =>
         {
             webBuilder.UseStartup<Startup>();
-        });
+        }).UseSerilog(Logging.ConfigureLogger);
 }
